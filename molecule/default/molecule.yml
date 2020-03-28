@@ -12,6 +12,7 @@ lint: |
 platforms:
   - name: instance
     image: centos:7
+    privileged: true
 
 provisioner:
   name: ansible

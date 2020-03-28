@@ -2,11 +2,6 @@
 language: python
 services: docker
 
-versions:
-  - "2.7"
-  - "3.5"
-cache: pip
-
 install:
   - pip install -U pip
   - pip --version
