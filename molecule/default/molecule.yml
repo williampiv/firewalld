@@ -1,11 +1,5 @@
-lint:
-  name: yamllint
-  options:
-    config-file: tests/yamllint.yml
-provisioner:
-  name: ansible
-  lint:
-    name: ansible-lint
-platforms:
-  - name: instance
-    image: centos:7
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+  flake8
