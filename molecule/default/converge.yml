@@ -3,3 +3,15 @@
   hosts: all
   roles:
     - firewalld
+
+  vars:
+    firewalld_zone: public
+   firewalld_ports_open:
+      - 8080
+    firewalld_services:
+      - ssh
+      - https
+    firewalld_ports_forward:
+      - proto: tcp
+        port: 81
+        to_port: 8081
