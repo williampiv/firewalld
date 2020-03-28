@@ -6,7 +6,7 @@
 
   vars:
     firewalld_zone: public
-   firewalld_ports_open:
+    firewalld_ports_open:
       - 8080
     firewalld_services:
       - ssh
