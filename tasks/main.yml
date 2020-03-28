@@ -1,5 +1,4 @@
-# role tasks
-
+---
 - name: install firewalld
   become: "{{ firewalld_become }}"
   package:
