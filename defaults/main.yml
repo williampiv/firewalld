@@ -9,7 +9,7 @@ firewalld_zone: public
 # This is a list of dictionaries that contain a protocol (tcp or udp) with
 # a single port to open, or a port range delimited with a dash.
 
-#firewalld_ports_open:
+# firewalld_ports_open:
 #  - proto: tcp
 #    port: 8080
 #  - proto: udp
@@ -26,7 +26,7 @@ firewalld_services: []
 # This is a list of dictionaries that contain a protocol (tcp or udp) with
 # a single port to forward to another port on the local system.
 
-#firewalld_ports_forward:
+# firewalld_ports_forward:
 #  - proto: tcp
 #    port: 80
 #    to_port: 8080

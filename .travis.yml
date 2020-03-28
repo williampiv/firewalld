@@ -16,6 +16,7 @@ install:
 
 script:
   - molecule lint
+  - molecule test
   - flake8 $(find . -name '*.py')
 
 notifications:
