@@ -7,7 +7,5 @@
   vars:
     firewalld_zone: public
     firewalld_ports_open: []
-    firewalld_services:
-      - ssh
-      - https
+    firewalld_services: []
     firewalld_ports_forward: []
