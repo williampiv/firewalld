@@ -22,7 +22,7 @@ install:
 script:
   - molecule lint
   - molecule test
- # - flake8 $(find . -name '*.py')
+  # - flake8 $(find . -name '*.py')
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/

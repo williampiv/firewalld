@@ -11,7 +11,7 @@
     name: firewalld
     state: started
     enabled: true
-  changed_when: False
+  changed_when: false
 
 - name: open ports for zone "{{ firewalld_zone }}" (IPv4+IPv6)
   become: "{{ firewalld_become }}"
