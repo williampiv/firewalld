@@ -2,6 +2,18 @@
 language: python
 services: docker
 
+env:
+  global:
+    - ROLE_NAME: firewalld
+  matrix:
+    - MOLECULE_DISTRO: centos8
+    - MOLECULE_DISTRO: centos7
+    - MOLECULE_DISTRO: centos6
+    - MOLECULE_DISTRO: ubuntu1804
+    - MOLECULE_DISTRO: ubuntu1604
+    - MOLECULE_DISTRO: debian10
+    - MOLECULE_DISTRO: debian9
+
 install:
   - pip install -U pip
   - pip --version
@@ -11,10 +23,11 @@ install:
   - flake8 --version
   - molecule --version
 
+
 script:
   - molecule lint
   - molecule test
-  - flake8 $(find . -name '*.py')
+ # - flake8 $(find . -name '*.py')
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
