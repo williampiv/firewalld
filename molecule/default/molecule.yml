@@ -1,4 +1,8 @@
 ---
+dependency:
+  name: galaxy
+driver:
+  name: docker
 lint: |
   set -e
   yamllint .
@@ -8,3 +12,8 @@ lint: |
 platforms:
   - name: instance
     image: centos:7
+
+provisioner:
+  name: ansible
+  playbooks:
+    converge: converge.yml
