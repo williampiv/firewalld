@@ -6,15 +6,8 @@
 
   vars:
     firewalld_zone: public
-    firewalld_ports_open:
-      - proto: tcp
-        port: 8080
-      - proto: udp
-        port: 9990-9999
+    firewalld_ports_open: []
     firewalld_services:
       - ssh
       - https
-    firewalld_ports_forward:
-      - proto: tcp
-        port: 81
-        to_port: 8081
+    firewalld_ports_forward: []
