@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  author: David Roble
+  author: William Perdue
   description: Hole punching and local port forwarding for firewalld service
-  company: Red Hat, Inc.
+  company: 
   license: GPLv3
   min_ansible_version: 2.4
   platforms:
@@ -15,6 +15,7 @@ galaxy_info:
     - firewall
     - firewalld
     - redhat
-    - oasis
+    - centos
+    - el
 
 dependencies: []
