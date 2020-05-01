@@ -2,7 +2,6 @@
 galaxy_info:
   author: William Perdue
   description: Hole punching and local port forwarding for firewalld service
-  company: 
   license: GPLv3
   min_ansible_version: 2.4
   platforms:
